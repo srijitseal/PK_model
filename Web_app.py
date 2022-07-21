@@ -155,7 +155,7 @@ def predict(data_mfp_Mordred, features_mfp_mordred_columns):#log human_VDss_L_kg
     y_pred =  loaded_rf.predict(X)   
 
     
-    return(np.round(float(10**y_pred), 2))
+    return("The VDss is", np.round(float(10**y_pred), 2), "L/kg")
 
 
 def main():
