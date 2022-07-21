@@ -162,9 +162,9 @@ def main():
     
     st.title("PK Model")
 
-    #smile=st.text_input("Enter SMILES")
+    smile=st.text_input("Enter SMILES")
     
-    smile="C#CCN(C)C(C)Cc1ccccc1"
+    #smile="C#CCN(C)C(C)Cc1ccccc1"
     
     smile = standardize(smile)
     data = {'smiles_r':  [smile]
