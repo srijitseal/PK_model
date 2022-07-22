@@ -151,7 +151,6 @@ def main():
     data = pd.DataFrame(data)
     data_mfp_Mordred = calcdesc(data)
     
-    data_mfp_Mordred_animal = predict_animal(data_mfp_Mordred)
 
     #read from file features
     file = open("features_mfp_mordred_animal_human_modelcolumns.txt", "r")
@@ -163,6 +162,7 @@ def main():
     pred = ''
     
     if st.button('Predict Human VDss'):
+        data_mfp_Mordred_animal = predict_animal(data_mfp_Mordred)
         pred = predict_VDss(data_mfp_Mordred_animal, features_mfp_mordred_animal_columns)
     st.success(pred)
 
