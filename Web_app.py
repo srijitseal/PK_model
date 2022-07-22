@@ -165,6 +165,11 @@ def main():
         data_mfp_Mordred_animal = predict_animal(data_mfp_Mordred)
         pred = predict_VDss(data_mfp_Mordred_animal, features_mfp_mordred_animal_columns)
     st.success(pred)
+    
+    if st.button('Predict Human CL'):
+        data_mfp_Mordred_animal = predict_animal(data_mfp_Mordred)
+        pred = predict_CL(data_mfp_Mordred_animal, features_mfp_mordred_animal_columns)
+        st.success(pred)
 
 if __name__ == '__main__': 
     main()        
