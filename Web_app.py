@@ -147,10 +147,12 @@ def main():
     )
     
     st.image("Logo.png", width=100)
-    
     st.title("PK Model")
-    st.write("[![Follow](<https://img.shields.io/twitter/follow/><srijitseal>?style=social)](<https://www.twitter.com/><srijitseal>)")
-    smile=st.text_input("Enter SMILES")
+    st.write(
+    """
+    [![Follow](https://img.shields.io/twitter/follow/srijitseal?style=social)](https://www.twitter.com/srijitseal)
+    """
+)
     
     #smile="C#CCCCC(=O)c1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1"
     
