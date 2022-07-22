@@ -154,6 +154,7 @@ def main():
     """
 )
     
+    smile=st.text_input("Enter SMILES")
     #smile="C#CCCCC(=O)c1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1"
     
     smile = standardize(smile)
