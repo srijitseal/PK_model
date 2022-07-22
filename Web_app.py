@@ -1,20 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
-
-
+import streamlit as st
 import numpy as np
 import pandas as pd
-from rdkit.Chem import inchi
 from rdkit import Chem
+from rdkit.Chem import inchi
 from rdkit.Chem.MolStandardize import rdMolStandardize
 import pickle
-import streamlit as st
-import pickle
-from rdkit import Chem
 from mordred import Calculator, descriptors
-import numpy as np
 from rdkit.Chem.rdMolDescriptors import GetMorganFingerprintAsBitVect
 from sklearn.feature_selection import VarianceThreshold
 from itertools import compress
@@ -50,7 +44,7 @@ def standardize(smiles):
     except: 
         
         return "Cannot_do"
-    
+
     
 def calcdesc(data):
     # create descriptor calculator with all descriptors
@@ -147,9 +141,9 @@ def main():
     
     st.title("PK Model")
 
-    #smile=st.text_input("Enter SMILES")
+    smile=st.text_input("Enter SMILES")
     
-    smile="C#CCCCC(=O)c1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1"
+    #smile="C#CCCCC(=O)c1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1"
     
     smile = standardize(smile)
     data = {'smiles_r':  [smile]
@@ -174,10 +168,6 @@ def main():
 
 if __name__ == '__main__': 
     main()        
-
-
-# In[ ]:
-
 
 
 
