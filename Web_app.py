@@ -129,7 +129,7 @@ def predict_CL(data_mfp_Mordred, features_mfp_mordred_columns):#log human_VDss_L
     endpoint = "human_VDss_L_kg"
     features = features_mfp_mordred_columns
 
-    loaded_rf = pickle.load(open("og_human_CL_mL_min_kg_withanimaldata_model.sav", 'rb'))
+    loaded_rf = pickle.load(open("log_human_CL_mL_min_kg_withanimaldata_model.sav", 'rb'))
 
     X = data_mfp_Mordred[features]
     y_pred =  loaded_rf.predict(X)   
@@ -169,7 +169,7 @@ def main():
     if st.button('Predict Human CL'):
         data_mfp_Mordred_animal = predict_animal(data_mfp_Mordred)
         pred = predict_CL(data_mfp_Mordred_animal, features_mfp_mordred_animal_columns)
-        st.success(pred)
+    st.success(pred)
 
 if __name__ == '__main__': 
     main()        
