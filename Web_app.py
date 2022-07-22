@@ -163,8 +163,8 @@ def main():
     pred = ''
     
     if st.button('Predict Human VDss'):
-        pred1 = predict_VDss(data_mfp_Mordred_animal, features_mfp_mordred_animal_columns)
-    st.success(pred1)
+        pred = predict_VDss(data_mfp_Mordred_animal, features_mfp_mordred_animal_columns)
+    st.success(pred)
 
 if __name__ == '__main__': 
     main()        
