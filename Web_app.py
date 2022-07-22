@@ -139,8 +139,17 @@ def predict_CL(data_mfp_Mordred, features_mfp_mordred_columns):#log human_VDss_L
 
 def main():
     
+    st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded"
+    )
+    
+    st.image("Logo.png", width=100)
+    
     st.title("PK Model")
-
+    st.write("[![Follow](<https://img.shields.io/twitter/follow/><srijitseal>?style=social)](<https://www.twitter.com/><srijitseal>)")
     smile=st.text_input("Enter SMILES")
     
     #smile="C#CCCCC(=O)c1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1"
