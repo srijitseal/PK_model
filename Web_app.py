@@ -140,7 +140,7 @@ def predict_CL(data_mfp_Mordred, features_mfp_mordred_columns):#log human_VDss_L
 def main():
     
     st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
+    page_title="PK Model",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded"
