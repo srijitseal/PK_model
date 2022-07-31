@@ -146,7 +146,7 @@ def main():
     initial_sidebar_state="expanded"
     )
     
-    st.image("Logo.png", width=300)
+    st.image("Logo.png") #, width=300
     st.title("PK Model")
     st.write(
     """
