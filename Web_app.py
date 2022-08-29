@@ -266,8 +266,6 @@ def main():
     smile=st.text_input("Enter SMILES")
     #smile="C#CCCCC(=O)c1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1"
     
-    smile="C#CCCCC(=O)c1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1"
-    
     smile = standardize(smile)
     test = {'smiles_r':  [smile]
             }
@@ -283,14 +281,6 @@ def main():
     features_mfp_mordred_animal_columns = features_mfp_mordred_animal_columns[:-1]
 
     #predict    
-
-   
-   
-    
-
-    
-    
-    #predict
     pred = ''
     
     if st.button('Predict Human CL'):
